@@ -6,13 +6,16 @@ const Shop = () => {
   const { shopItems, addItemToCart } = useContext(AppContext)
 
   return (
-    <div className="App">
+    <div className="center-align">
       shop component
       <ul>
         {
-          shopItems.map((item, index) => 
-            <li key={index} onClick={() => addItemToCart(item)}>{item}</li>
-          )
+          shopItems.map(item => {
+            const { id, name } = item 
+            return <li 
+            key={id} 
+            onClick={() => addItemToCart(name, id)}>{name}</li>
+          })
         }
       </ul>
       
