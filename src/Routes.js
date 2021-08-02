@@ -1,10 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import App from './App'
-import Shop from './Shop'
-import About from './About'
-import Cart from './Cart'
-import Navbar from './Navbar'
+
+import Home from './Pages/Home'
+import Shop from './Pages/Shop'
+import About from './Pages/About'
+import Cart from './Pages/Cart'
+import Navbar from './Components/Navbar'
 
 const Routes = () => {
     
@@ -13,12 +14,12 @@ const Routes = () => {
             <Navbar />
             <Switch>
                 <Route path='/' exact>
-                    <App />
+                    <Home />
                 </Route>
                 <Route path='/shop' exact>
                     <Shop />
                 </Route>
-                <Route path='/shop/cart'>
+                <Route path='/cart'>
                     <Cart />
                 </Route>
                 <Route path='/about'>

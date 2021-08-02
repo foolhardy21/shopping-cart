@@ -1,3 +1,13 @@
+:root {
+  --navbar-background: #c7f9cc;
+  --navbar-color: #22577a;
+  --hover-color: #38a3a5;
+  --item-background: #80ed99;
+  --item-hover: #57cc99;
+  --message-text: #22577a;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,19 +17,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 .center-align {
-  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
 }
 
 .navigation {
+  padding: 20px 10px;
   display: flex;
   justify-content: space-between;
-  background-color: aquamarine;
+  background-color: var(--navbar-background);
 }
+
 .logo {
   margin-left: 10px;
   text-transform: capitalize;
@@ -27,17 +39,73 @@ code {
   font-weight: bold;
   font-style:italic;
   letter-spacing: 3px;
-  color: black;
 }
+
 .navigation ul {
   display: flex;  
 }
-.navigation li, a {
+
+li {
   list-style: none;
-  text-decoration: none;
-  margin: 0 20px;
-  color: black;
 }
 li:hover {
   cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: var(--navbar-color);
+  margin: 0 20px;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--hover-color);
+}
+
+span {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+ul {
+  padding-left: 0;
+}
+.items-grid {
+  margin-top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-item {
+  display: flex;
+  padding: 20px;
+  color: var(--navbar-color);
+  background: var(--item-background);
+}
+
+.grid-item:hover {
+  background: var(--item-hover);
+}
+
+.cart-item-btn {
+  background: transparent;
+  border-width: thin;
+  border-color: var(--navbar-color);
+  border-radius: 4px;
+}
+.cart-item-btn:hover {
+  cursor: pointer;
+}
+.message {
+  margin-top: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--message);
+  border-style: solid;
+  border-color: var(--message);
+  border-width: thin;
 }

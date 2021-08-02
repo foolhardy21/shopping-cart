@@ -1,13 +1,15 @@
 import React, { useContext } from 'react'
 import {Link} from 'react-router-dom'
-import { AppContext } from './context';
+import { AppContext } from '../context';
 
 const Navbar = () => {
     const { getCartQuantity } = useContext(AppContext)
 
   return (
     <nav className='navigation'>
-        <div className='logo'>shopit</div>
+        <Link to='/'>
+            <div className='logo'>shopit</div>
+        </Link>
         <ul>
             <li>
                 <Link to='/'>Home</Link>
@@ -16,7 +18,9 @@ const Navbar = () => {
                 <Link to='/shop'>Shop</Link>
             </li>
             <li>
-                <Link to='/shop/cart'>Cart {getCartQuantity()}</Link>
+                <Link to='/cart'>
+                    Cart <span>{`${getCartQuantity()> 0 ? `${getCartQuantity()}` : ''}`}</span>
+                </Link>
             </li>
             <li>
                 <Link to='/about'>About</Link>
