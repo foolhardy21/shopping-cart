@@ -2,9 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Routes from './Routes';
+import { AppProvider } from './context'
 
 ReactDOM.render(
-  <Routes />,
+  <AppProvider>
+    <Routes />
+  </AppProvider>,
   document.getElementById('root')
 );
 
