@@ -6,14 +6,10 @@ This is a solution to the [Shopping Cart on The Odin Projects](https://www.theod
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-
 
 
 ## Overview
