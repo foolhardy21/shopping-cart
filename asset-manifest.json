@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/foolhardy21/shopping-cart/static/css/main.6091ce80.chunk.css",
+    "main.js": "/foolhardy21/shopping-cart/static/js/main.8113313a.chunk.js",
+    "main.js.map": "/foolhardy21/shopping-cart/static/js/main.8113313a.chunk.js.map",
+    "runtime-main.js": "/foolhardy21/shopping-cart/static/js/runtime-main.875a07c6.js",
+    "runtime-main.js.map": "/foolhardy21/shopping-cart/static/js/runtime-main.875a07c6.js.map",
+    "static/js/2.47a71c93.chunk.js": "/foolhardy21/shopping-cart/static/js/2.47a71c93.chunk.js",
+    "static/js/2.47a71c93.chunk.js.map": "/foolhardy21/shopping-cart/static/js/2.47a71c93.chunk.js.map",
+    "index.html": "/foolhardy21/shopping-cart/index.html",
+    "static/css/main.6091ce80.chunk.css.map": "/foolhardy21/shopping-cart/static/css/main.6091ce80.chunk.css.map",
+    "static/js/2.47a71c93.chunk.js.LICENSE.txt": "/foolhardy21/shopping-cart/static/js/2.47a71c93.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.875a07c6.js",
+    "static/js/2.47a71c93.chunk.js",
+    "static/css/main.6091ce80.chunk.css",
+    "static/js/main.8113313a.chunk.js"
+  ]
+}
